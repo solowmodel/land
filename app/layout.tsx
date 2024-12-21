@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "SPIN",
-  description: "Spin Records",
+  title: "Vape and Smoke",
+  description: "Encinitas Vape and Smoke Shop",
 };
 
 export default function RootLayout({
