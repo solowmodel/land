@@ -13,8 +13,7 @@ export default function Home() {
         </p>
       </div>
 
-   
-         <div className="mb-2 mt-12"> 
+      <div className="mb-2 mt-12"> 
         <Image
           src="/24.jpg"
           alt="Spin Records logo"
@@ -24,7 +23,7 @@ export default function Home() {
       </div>
       <div className="text-center mb-2"> 
         <p className={bebasNeue.className} style={{ fontSize: '40px', color: 'white' }}>
-          Encinitas, CA
+          Encinitas Vape & Smoke
         </p>
         <p className="text-xs text-gray-300 font-mono"> 
           Open 7 Days a Week
@@ -67,18 +66,36 @@ export default function Home() {
         More
       </a>
       
-       <div className="mb-2 mt-12"> 
-        <Image
-          src="/vape.png"
-          alt="Spin Records logo"
-          width={100}
-          height={100}
-        />
+
+        {/* Brand logos */}
+      <div className="flex space-x-4 mt-4"> 
+        <div style={{ width: '80px' }}> {/* Fixed width container */}
+          <Image
+            src="/hy_.png"
+            alt="hy_ logo"
+            width={80}
+            height={80}
+          />
+        </div>
+        <div style={{ width: '80px' }}> {/* Fixed width container */}
+          <Image
+            src="/raw.png"
+            alt="rawp logo"
+            width={80}
+            height={80}
+          />
+        </div>
+        <div style={{ width: '80px' }}> {/* Fixed width container */}
+          <Image
+            src="/opms.png"
+            alt="zig logo"
+            width={80}
+            height={80}
+          />
+        </div>
       </div>
     </main>
   );
 }
-
-
 
 
