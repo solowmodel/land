@@ -31,11 +31,11 @@
   display: none;
 }
 .grid-item {
-  background-color: #eee;
+  background-color: #black;
   padding: 1em;
 }
 html {
-  background-image: url('/back2.gif');
+ background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
   /* Optional: background-attachment: fixed; */

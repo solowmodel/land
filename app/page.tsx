@@ -9,22 +9,22 @@ export default function Home() {
       {/* Sticky Item List (bg-black removed) */}
       <div className="fixed top-0 left-0 right-0 text-center p-2 z-10"> 
         <p className="text-xs text-gray-300 font-mono">
-          CDs | Vinyl | Tapes | DVDs | Posters | Books | Pins | Imports
+          KRATOM | 7 OH | PIPES | GLASS | VAPES | NICOTINE 
         </p>
       </div>
 
-      <div className="mb-2 mt-12"> 
+   
+         <div className="mb-2 mt-12"> 
         <Image
-          src="/spinny.png"
+          src="/24.jpg"
           alt="Spin Records logo"
-          width={200}
+          width={300}
           height={100}
         />
       </div>
-    
       <div className="text-center mb-2"> 
         <p className={bebasNeue.className} style={{ fontSize: '40px', color: 'white' }}>
-          Carlsbad, CA
+          Encinitas, CA
         </p>
         <p className="text-xs text-gray-300 font-mono"> 
           Open 7 Days a Week
@@ -34,7 +34,7 @@ export default function Home() {
 
       <div className="flex space-x-4 mt-4">
         <a
-          href="https://maps.app.goo.gl/xGaewDgivFPTA1yRA"
+          href="https://maps.app.goo.gl/UXPRuQyH74f4ZxGP7"
           target="_blank"
           rel="noopener noreferrer"
           className={`
@@ -45,7 +45,7 @@ export default function Home() {
           Directions
         </a>
         <a
-          href="tel:+17604340807"
+          href="tel:+17607048205"
           className={`
             bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded
             ${bebasNeue.className} w-1/2 flex items-center justify-center
@@ -56,7 +56,7 @@ export default function Home() {
       </div>
 
       <a
-        href="https://linktr.ee/grooveshoppe"
+        href=""
         target="_blank"
         rel="noopener noreferrer"
         className={`
@@ -66,6 +66,15 @@ export default function Home() {
       >
         More
       </a>
+      
+       <div className="mb-2 mt-12"> 
+        <Image
+          src="/vape.png"
+          alt="Spin Records logo"
+          width={100}
+          height={100}
+        />
+      </div>
     </main>
   );
 }
