@@ -27,7 +27,7 @@ export default function Home() {
 
         </p>
         <p className="text-xs text-gray-300 font-mono">
-          Open 7 Days a Week
+          Open Mon 12-6 Tue - Sat 12-7 Sun Closed
         </p>
       </div>
 
