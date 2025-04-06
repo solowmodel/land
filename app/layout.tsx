@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Vape and Smoke",
-  description: "Encinitas Vape and Smoke Shop",
+  title: "Pack Ratt Records & Vintage",
+  description: "Pack Ratt Records & Vintage, San Diego: Rare vinyl, vintage clothes, & unique finds! We are open, come hang!",
 };
 
 export default function RootLayout({
