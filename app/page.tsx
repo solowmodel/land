@@ -97,7 +97,7 @@ export default function Home() {
 
       {/* Social Media Icons */}
       <div className="flex space-x-4 mt-8">
-        <a href="[https://www.instagram.com/packrattrecords/](https://www.instagram.com/packrattrecords/)" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+        <a href="https://www.instagram.com/packrattrecords/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
           <FaInstagram size={30} />
         </a>
         <a href="#" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
