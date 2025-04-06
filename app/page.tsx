@@ -17,7 +17,7 @@ export default function Home() {
       <div className="mb-2 mt-12">
         <Image
           src="/pr_final_w.png"
-          alt="Spin Records logo"
+          alt="Pack Ratt Records and Vintage"
           width={300}
           height={100}
         />
@@ -71,7 +71,7 @@ export default function Home() {
         <div style={{ width: '80px' }}>
           <Image
             src="/4th.png"
-            alt="hy_ logo"
+            alt="4th gear surf mats"
             width={80}
             height={80}
           />
@@ -79,7 +79,7 @@ export default function Home() {
         <div style={{ width: '80px' }}>
           <Image
             src="/yucca_ting_w.png"
-            alt="rawp logo"
+            alt="yucca fins"
             width={80}
             height={80}
           />
@@ -87,7 +87,7 @@ export default function Home() {
         <div style={{ width: '80px' }}>
           <Image
             src="/methless_fw.png"
-            alt="rawp logo"
+            alt="methless surfboards"
             width={80}
             height={80}
           />
@@ -96,7 +96,7 @@ export default function Home() {
 
       {/* Social Media Icons */}
       <div className="flex space-x-4 mt-8">
-        <a href="#" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+        <a href="https://www.instagram.com/packrattrecords/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
           <FaInstagram size={30} />
         </a>
         <a href="#" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
