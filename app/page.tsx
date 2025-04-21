@@ -98,7 +98,7 @@ export default function Home() {
           </div>
           <div style={{ width: '80px' }}>
             <Image
-              src="/yucca_ting_w.png"
+              src="/lower_w.png"
               alt="rawp logo"
               width={80}
               height={80}
