@@ -1,84 +1,69 @@
-import Image from 'next/image';
-import { Bebas_Neue } from 'next/font/google';
+import Image from "next/image";
+import { Bebas_Neue } from "next/font/google";
 
-const bebasNeue = Bebas_Neue({ weight: '400', subsets: ['latin'] });
+// Initialize font at the top level to avoid "Module not found" errors
+const bebasNeue = Bebas_Neue({
+  weight: '400',
+  display: 'swap', 
+  subsets: ['latin'] 
+});
 
-export default function Home() {
+export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center">
-      {/* Sticky Item List (bg-black removed) */}
-      <div className="fixed top-0 left-0 right-0 text-center p-2 z-10"> 
-        <p className="text-xs text-gray-300 font-mono">
-          KRATOM | 7 OH | PIPES | GLASS | VAPES | NICOTINE 
+    <main className="flex min-h-screen flex-col items-center justify-center p-6 bg-white text-black">
+      
+      {/* Header Section */}
+      <div className="text-center mb-10">
+        <h1 className={`${bebasNeue.className} text-6xl mb-1 uppercase tracking-tight`}>
+          Tim Dinan
+        </h1>
+        <div className="h-1 w-12 bg-gray-300 mx-auto mb-4"></div>
+        <p className="text-gray-500 tracking-[0.25em] uppercase text-[10px] font-bold">
+          Professional Resume & Portfolio
         </p>
       </div>
 
-   
-         <div className="mb-2 mt-12"> 
-        <Image
-          src="/24.jpg"
-          alt="Spin Records logo"
-          width={300}
-          height={100}
-        />
-      </div>
-      <div className="text-center mb-2"> 
-        <p className={bebasNeue.className} style={{ fontSize: '40px', color: 'white' }}>
-          Encinitas, CA
-        </p>
-        <p className="text-xs text-gray-300 font-mono"> 
-          Open 7 Days a Week
-        </p>
-      </div>
-
-
-      <div className="flex space-x-4 mt-4">
+      {/* Main Content Container */}
+      <div className="w-full max-w-xs flex flex-col space-y-4">
+        
+        {/* Primary Action: Open the PDF from the /public folder */}
         <a
-          href="https://maps.app.goo.gl/UXPRuQyH74f4ZxGP7"
+          href="/resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className={`
-            bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded 
-            ${bebasNeue.className} w-1/2 flex items-center justify-center
+            bg-black hover:bg-gray-800 text-white font-bold py-5 px-4 rounded
+            ${bebasNeue.className} flex items-center justify-center text-2xl tracking-wide transition-all active:scale-95
           `}
         >
-          Directions
+          View Resume (PDF)
         </a>
+
+        {/* LinkedIn - Full Width */}
         <a
-          href="tel:+17607048205"
+          href="https://linkedin.com" // Update with your LinkedIn URL
+          target="_blank"
+          rel="noopener noreferrer"
           className={`
-            bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded
-            ${bebasNeue.className} w-1/2 flex items-center justify-center
+            bg-gray-100 hover:bg-gray-200 text-black font-bold py-3 px-4 rounded
+            ${bebasNeue.className} flex items-center justify-center text-lg transition-all
           `}
         >
-          Call
+          LinkedIn Profile
         </a>
       </div>
 
-      <a
-        href=""
-        target="_blank"
-        rel="noopener noreferrer"
-        className={`
-          bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded mt-4
-          ${bebasNeue.className}
-        `}
-      >
-        More
-      </a>
-      
-       <div className="mb-2 mt-12"> 
+      {/* Personal Branding Logo */}
+      <div className="mt-20 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
         <Image
-          src="/vape.png"
-          alt="Spin Records logo"
-          width={100}
-          height={100}
+          src="/vape.png" 
+          alt="Tim Dinan Branding"
+          width={70}
+          height={70}
+          priority
         />
       </div>
+      
     </main>
   );
 }
-
-
-
-
